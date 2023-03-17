@@ -222,6 +222,8 @@ body {
 
 .manage-info {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
   margin-top: 2%;
 }
@@ -232,7 +234,7 @@ body {
   margin: 20px 0;
 }
 .manage .manage-info img {
-  width: 50px;
+  width: 70px;
 }
 
 /* Use case ********************************************** */
@@ -1052,11 +1054,11 @@ body {
 
   /* Footer Section *******************************************************/
   .footer {
-    margin-top: 5%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
   }
+
   .footer span {
     font-size: 14px;
   }
