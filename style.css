@@ -231,7 +231,7 @@ body {
 .manage-info span {
   font-size: 12.5px;
   line-height: 20px;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .manage .manage-info img {
   width: 70px;
@@ -760,6 +760,7 @@ body {
   }
 
   /* Manage-Section************************************ */
+
   /* .manage{
       position: relative;
   
@@ -788,7 +789,7 @@ body {
   .manage .manage-content .manage-intro p,
   .manage .manage-content .manage-info span,
   .manage .manage-content .manage-info p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
   }
 
