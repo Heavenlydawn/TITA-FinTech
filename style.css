@@ -981,3 +981,12 @@ body {
     font-size: 50px;
   }
 }
+
+@media screen and (width:1440px) {
+  .container{
+    max-width: 1350px;
+  }
+  .manage .manage-img img {
+    width: 100%;
+}
+}
