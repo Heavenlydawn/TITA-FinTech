@@ -196,7 +196,6 @@ body {
   width: 300px;
 }
 
-
 .manage .manage-content h1 {
   font-size: 40px;
   font-weight: bold;
@@ -481,7 +480,6 @@ body {
 .footer-logo img {
   width: 150px;
 }
-
 
 /* KeyFrames ********************************************** */
 
@@ -788,7 +786,7 @@ body {
   .manage .manage-img img {
     width: 80%;
   }
-  
+
   .manage .manage-content h1 {
     font-size: 55px;
   }
@@ -952,9 +950,8 @@ body {
   }
 }
 
-
-@media screen and (min-width:1280px) {
-  .container{
+@media screen and (min-width: 1280px) {
+  .container {
     max-width: 1500px;
   }
   #home::after {
@@ -962,7 +959,7 @@ body {
     min-height: 85%;
   }
 
-  .manage .manage-content h1{
+  .manage .manage-content h1 {
     font-size: 80px;
   }
 
@@ -970,24 +967,30 @@ body {
     font-size: 80px;
   }
 
-  .service-intro h1{
+  .service-intro h1 {
     font-size: 80px;
   }
 
-  .payment .payment-intro h1{
+  .payment .payment-intro h1 {
     font-size: 80px;
   }
-  .update h2{
+  .update h2 {
     font-size: 50px;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .container{
+@media screen and (max-width: 1440px) {
+  .container {
     max-width: 1300px;
   }
   .manage .manage-img img {
+    height: 100%;
     width: 100%;
-}
-
+  }
+  .manage .manage-content h1{
+    font-size: 70px;
+  }
+  .payment .payment-intro h1 {
+    font-size: 70px;
+  }
 }
