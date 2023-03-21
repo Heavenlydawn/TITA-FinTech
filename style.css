@@ -187,24 +187,16 @@ body {
   /* animation: slideInFromRight 1s ease-in; */
 }
 .manage-img img {
-  width: 100%;
+  /* width: 100%; */
 }
 .manage-bg {
-  position: relative;
+  /* position: relative; */
 }
 .manage-bg img {
   width: 300px;
 }
-.manage-bg .vector-1 {
-  position: absolute;
-  top: 70%;
-}
 
-.manage-bg .vector-2 {
-  /* position: absolute; */
-  /* bottom: 100%; */
-  /* left: 0%; */
-}
+
 .manage .manage-content h1 {
   font-size: 40px;
   font-weight: bold;
@@ -730,7 +722,7 @@ body {
   /* Home Section **************************************************************************/
   #home::after {
     width: 40%;
-    min-height: 70%;
+    min-height: 115%;
   }
   #home header .nav-center .nav-header {
     align-items: center;
@@ -755,11 +747,8 @@ body {
     flex-direction: row-reverse;
     position: relative;
   }
-  .hero .hero-img img {
-    width: 40%;
-    position: absolute;
-    right: 5%;
-    top: 0%;
+  .hero .hero-img {
+    width: 50%;
   }
 
   .hero .hero-content {
@@ -770,7 +759,7 @@ body {
   }
 
   .hero .hero-content h1 {
-    font-size: 55px;
+    font-size: 80px;
   }
   .hero .hero-content p {
     font-size: 20px;
@@ -791,17 +780,15 @@ body {
 
   /* Manage-Section************************************ */
 
-  .manage {
-    margin-block-start: 15%;
-  }
   .manage-content {
     flex-direction: row;
     gap: 5rem;
   }
 
   .manage .manage-img img {
-    width: 100%;
+    width: 80%;
   }
+  
   .manage .manage-content h1 {
     font-size: 55px;
   }
@@ -962,5 +949,35 @@ body {
     font-size: 20px;
     color: #000;
     line-height: 2rem;
+  }
+}
+
+
+@media screen and (min-width:1280px) {
+  .container{
+    max-width: 1500px;
+  }
+  #home::after {
+    width: 40%;
+    min-height: 85%;
+  }
+
+  .manage .manage-content h1{
+    font-size: 80px;
+  }
+
+  .usedCase .case h1 {
+    font-size: 80px;
+  }
+
+  .service-intro h1{
+    font-size: 80px;
+  }
+
+  .payment .payment-intro h1{
+    font-size: 80px;
+  }
+  .update h2{
+    font-size: 50px;
   }
 }
