@@ -982,11 +982,12 @@ body {
   }
 }
 
-@media screen and (width:1440px) {
+@media screen and (min-width:1440px) {
   .container{
-    max-width: 1350px;
+    max-width: 1300px;
   }
   .manage .manage-img img {
     width: 100%;
 }
+
 }
