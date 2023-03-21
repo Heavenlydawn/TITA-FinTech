@@ -90,7 +90,6 @@ body {
   transition: var(--transition);
 }
 #home header .nav-center .links a:hover {
-  color: #1740ff;
   padding-left: 1.5rem;
 }
 .social-icons {
@@ -145,7 +144,7 @@ body {
   padding: 0px;
 }
 
-.hero .hero-content .btn {
+.hero .hero-content .button-container .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -658,7 +657,7 @@ body {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .container {
     max-width: 1200px;
   }
@@ -683,7 +682,6 @@ body {
     margin: 0 0.5rem;
   }
   #home header .nav-center .links a:hover {
-    padding: 0;
     background: transparent;
   }
   .social-icons {
@@ -699,7 +697,7 @@ body {
     outline: none;
     border: none;
     padding: 15px 20px;
-    font-size: 1.2rem;
+    font-size:20px;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
@@ -710,7 +708,7 @@ body {
   #home header .social-icons .right-section-content {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
   }
   #home header .social-icons .right-section img {
     width: 30px;
@@ -732,7 +730,7 @@ body {
 
   #home header .nav-center .links a {
     font-size: 1.4rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2.5rem;
   }
   /* End Home Section **************************************************************************/
 
@@ -949,6 +947,7 @@ body {
     line-height: 2rem;
   }
 }
+
 
 @media screen and (min-width: 1280px) {
   .container {
