@@ -18,13 +18,14 @@ li {
   list-style-type: none;
 }
 span {
-  color: #1740ff;
+  color: #000;
   font-weight: 700;
   font-size: 1.5rem;
 }
 body {
   font-family: "Montserrat", sans-serif;
 }
+
 
 /* Utilities *****************************/
 .container {
@@ -82,7 +83,7 @@ body {
 }
 
 #home header .nav-center .links a {
-  color: #1740ff;
+  color: #000;
   font-size: 1rem;
   font-weight: bold;
   display: block;
@@ -132,6 +133,7 @@ body {
 .hero .hero-content h1 {
   font-size: 40px;
   width: 100%;
+  font-family: sans-serif;
 }
 .hero .hero-content p {
   font-size: 12.5px;
@@ -158,12 +160,12 @@ body {
   width: 100%;
   cursor: pointer;
 }
-.hero .button-container .btn-light {
+.hero .hero-content .button-container .btn-light {
   color: #1740ff;
   background: #fff;
   border: 1px solid #1740ff;
 }
-.hero .button-container .btn-blue {
+.hero .hero-content .button-container .btn-blue {
   color: #fff;
   background: linear-gradient(180deg, #1a73e9 0%, #1740ff 100%);
 }
@@ -180,7 +182,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.manage-img {
+.manage .manage-img img{
   width: calc(100% - 20px);
   margin: 0 auto;
   /* animation: slideInFromRight 1s ease-in; */
@@ -546,8 +548,9 @@ body {
     font-size: 3.5rem;
   }
   .hero .hero-content p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-top: 20px;
+    line-height: 30px;
   }
   .hero .hero-content .btn {
     margin-top: 20px;
@@ -582,8 +585,8 @@ body {
   .case h1 {
     font-size: 3.5rem;
   }
-  .cases p {
-    font-size: 1.4rem;
+  .usedCase .cases p {
+    font-size: 1.5rem;
   }
   .case .btn {
     margin-top: 20px;
@@ -603,15 +606,16 @@ body {
     font-size: 3.5rem;
   }
   .service-intro p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 2rem;
   }
   .card p,
   .card a {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    line-height: 30px;
   }
   .card span {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 3rem;
   }
 
@@ -620,8 +624,8 @@ body {
   .payment-intro h1 {
     font-size: 3.5rem;
   }
-  .payment-intro p {
-    font-size: 1.4rem;
+  .payment .payment-intro p {
+    font-size: 1.5rem;
     line-height: 2rem;
   }
   .payment-app span {
@@ -659,14 +663,15 @@ body {
 
 @media screen and (min-width: 900px) {
   .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    padding: 0 50px;
   }
   /* Header-Section*********************************************************** */
   #home header .nav-center {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1rem;
   }
   #home header .nav-center .nav-header .nav-toggle {
@@ -675,11 +680,14 @@ body {
   #home header .nav-center .links {
     height: auto;
     display: flex;
+
     margin-right: auto;
   }
   #home header .nav-center .links a {
     padding: 0;
     margin: 0 0.5rem;
+    font-size: 1.3rem;
+    padding: 0.5rem 2.5rem;
   }
   #home header .nav-center .links a:hover {
     background: transparent;
@@ -688,7 +696,7 @@ body {
     display: flex;
   }
   #home header .social-icons a {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #fff;
     margin: 0 0.5rem;
     transition: var(--transition);
@@ -697,7 +705,7 @@ body {
     outline: none;
     border: none;
     padding: 15px 20px;
-    font-size:20px;
+    font-size:16px;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
@@ -710,15 +718,18 @@ body {
     align-items: center;
     gap: 2.5rem;
   }
-  #home header .social-icons .right-section img {
-    width: 30px;
-  }
+  /* #home header .social-icons .right-section-content p{
+    color:#fff;
+    font-weight:bold;
+    font-size: 14px;
+  } */
+
   /* End Of Header Section */
 
   /* Home Section **************************************************************************/
   #home::after {
     width: 40%;
-    min-height: 115%;
+    min-height: 85%;
   }
   #home header .nav-center .nav-header {
     align-items: center;
@@ -726,11 +737,6 @@ body {
   }
   #home header .nav-center .nav-header .logo {
     height: 30px;
-  }
-
-  #home header .nav-center .links a {
-    font-size: 1.4rem;
-    padding: 0.5rem 2.5rem;
   }
   /* End Home Section **************************************************************************/
 
@@ -753,13 +759,16 @@ body {
   .hero .hero-img {
     animation: slideInFromRight 1s ease-in;
   }
+  .hero .hero-img img{
+    width: 70%;
+  }
 
   .hero .hero-content h1 {
     font-size: 80px;
   }
   .hero .hero-content p {
     font-size: 20px;
-    line-height: 25px;
+    line-height: 30px;
   }
   .hero .hero-content {
     width: 500px;
@@ -778,11 +787,12 @@ body {
 
   .manage-content {
     flex-direction: row;
-    gap: 5rem;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .manage .manage-img img {
-    width: 80%;
+    /* width: 50%; */
   }
 
   .manage .manage-content h1 {
@@ -794,27 +804,34 @@ body {
     font-size: 18px;
     line-height: 30px;
   }
-
+  .manage .manage-content .manage-information {
+    margin-left:50px;
+    width: 800px;
+  }
   .manage .manage-info img {
     width: 100px;
   }
 
   /* Use case ********************************************** */
   .usedCase {
-    justify-content: space-between;
-    gap: 5rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(100% - 20px);
   }
   .usedCase .case-img {
     /* animation: slideInFromRight 1s ease-in; */
   }
   .usedCase .case-img img {
     border-radius: 10px;
-  }
-  .usedCase {
-    flex-direction: row;
+    width: 80%;
+    margin-left: 15%;
   }
   .usedCase .case {
     /* animation: slideInFromLeft 1s ease-in; */
+    width: 500px;
+    margin-left: 5%;
+    text-align: justify;
   }
   .usedCase .case h1 {
     font-size: 55px;
@@ -823,6 +840,7 @@ body {
 
   .usedCase .cases p {
     font-size: 20px;
+    line-height: 30px;
   }
 
   .usedCase .case .btn {
@@ -840,18 +858,34 @@ body {
   }
 
   /* Service Section **********************************************/
+  #service {
+    position: relative;
+    width: 100vw;
+    overflow-x: clip;
+  }
+  #service::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: url(./images/Vector-1.svg);
+    position: absolute;
+    left: 45%;
+    top: -10%;
+  }
   .service {
     /* animation: slideInFromBottom 1s ease-in; */
   }
   .service-intro {
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .service-intro h1 {
     font-size: 55px;
   }
   .service-intro p {
     font-size: 20px;
+    width:600px;
   }
 
   .service-cards {
@@ -877,6 +911,7 @@ body {
 
   /* Payment Section ******************************* */
   .payment {
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
     gap: 5rem;
@@ -934,6 +969,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    margin-bottom: 3%;
   }
 
   .footer span {
@@ -951,27 +987,26 @@ body {
 
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1500px;
+    /* max-width: 1500px; */
   }
   #home::after {
-    width: 40%;
-    min-height: 85%;
+    min-height: 75%;
   }
 
   .manage .manage-content h1 {
-    font-size: 80px;
+    font-size: 50px;
   }
 
   .usedCase .case h1 {
-    font-size: 80px;
+    font-size: 70px;
   }
 
   .service-intro h1 {
-    font-size: 80px;
+    font-size: 70px;
   }
 
   .payment .payment-intro h1 {
-    font-size: 80px;
+    font-size: 70px;
   }
   .update h2 {
     font-size: 50px;
@@ -982,11 +1017,11 @@ body {
 
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1300px;
+    /* max-width: 1300px; */
   }
   .manage .manage-img img {
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
   }
   .manage .manage-content h1{
     font-size: 70px;
