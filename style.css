@@ -26,11 +26,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-
 /* Utilities *****************************/
 .container {
   margin: 0 auto;
-  /* display: flex;
+  /* display: flex;s
   justify-content: space-between;
   align-items: center;  */
   width: 100%;
@@ -182,20 +181,18 @@ body {
   display: flex;
   flex-direction: column;
 }
-.manage .manage-img img{
+.manage .manage-img  {
   width: calc(100% - 20px);
   margin: 0 auto;
   /* animation: slideInFromRight 1s ease-in; */
 }
-.manage-img img {
-  /* width: 100%; */
+.manage .manage-img img {
+  width: 100%;
+
 }
-.manage-bg {
-  /* position: relative; */
-}
-.manage-bg img {
-  width: 300px;
-}
+/* #manage .manage .manage-bg {
+display: none;
+} */
 
 .manage .manage-content h1 {
   font-size: 40px;
@@ -559,7 +556,6 @@ body {
   }
 
   /* Manage-Section************************************ */
-
   .manage .manage-content h1 {
     font-size: 3.5rem;
   }
@@ -661,10 +657,9 @@ body {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .container {
-    /* max-width: 1200px; */
-    padding: 0 50px;
+    max-width: 100vw;
   }
   /* Header-Section*********************************************************** */
   #home header .nav-center {
@@ -680,14 +675,12 @@ body {
   #home header .nav-center .links {
     height: auto;
     display: flex;
-
     margin-right: auto;
   }
   #home header .nav-center .links a {
-    padding: 0;
     margin: 0 0.5rem;
-    font-size: 1.3rem;
-    padding: 0.5rem 2.5rem;
+    font-size: 1.4rem;
+    padding: 0.5rem 1.1rem;
   }
   #home header .nav-center .links a:hover {
     background: transparent;
@@ -696,16 +689,17 @@ body {
     display: flex;
   }
   #home header .social-icons a {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #fff;
     margin: 0 0.5rem;
+    font-weight: bold;
     transition: var(--transition);
   }
   #home header .social-icons .btn-light {
     outline: none;
     border: none;
     padding: 15px 20px;
-    font-size:16px;
+    font-size: 16px;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
@@ -718,18 +712,13 @@ body {
     align-items: center;
     gap: 2.5rem;
   }
-  /* #home header .social-icons .right-section-content p{
-    color:#fff;
-    font-weight:bold;
-    font-size: 14px;
-  } */
 
   /* End Of Header Section */
 
   /* Home Section **************************************************************************/
   #home::after {
     width: 40%;
-    min-height: 85%;
+    min-height:85%;
   }
   #home header .nav-center .nav-header {
     align-items: center;
@@ -740,31 +729,29 @@ body {
   }
   /* End Home Section **************************************************************************/
 
-  /* Hero Section */
-
-  .hero {
+  /* Hero Section ************************************************************/
+ .hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row-reverse;
-    position: relative;
+    gap: 2rem;
   }
   .hero .hero-img {
-    width: 50%;
+    width: 80%;
+    animation: slideInFromRight 1s ease-in;
   }
 
   .hero .hero-content {
     animation: slideInFromLeft 1s ease-in;
   }
-  .hero .hero-img {
-    animation: slideInFromRight 1s ease-in;
-  }
-  .hero .hero-img img{
-    width: 70%;
+  .hero .hero-img img {
+    width: 100%;
   }
 
   .hero .hero-content h1 {
-    font-size: 80px;
+    font-size: 65px;
+    width: 515px;
   }
   .hero .hero-content p {
     font-size: 20px;
@@ -774,9 +761,9 @@ body {
     width: 500px;
   }
   .hero .hero-content .button-container .btn {
-    margin-top: 5%;
     padding: 15px 20px;
-    font-size: 18px;
+    font-size: 16px;
+    margin: 0;
   }
   .hero .hero-content .button-container {
     flex-direction: row;
@@ -784,17 +771,69 @@ body {
   }
 
   /* Manage-Section************************************ */
+  /* #manage{
+    position: relative;
+  }
+
+  #manage .manage .manage-bg{
+    display: block;
+
+  }
+  #manage .manage .manage-bg .bg1{
+    position: absolute;
+    left: -15%;
+    top: 0%;
+
+  }
+  #manage .manage .manage-bg .bg2{
+    position: absolute;
+    top:25%;
+    right: -25%;
+  } */
+
+  /* #manage{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  #manage::before{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 100%;
+    background:url(./images/Vector.svg);
+    background-repeat: no-repeat;
+  }
+  #manage::after{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 100%;
+    background:url(./images/Vector-2.svg);
+    background-repeat: no-repeat;
+    top:0%;
+    left: 50%;
+    bottom: 50px;
+  } */
+
+
+
 
   .manage-content {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    gap: 5rem;
   }
-
+  .manage .manage-img  {
+    /* width: calc(100% - 200px); */
+  }
   .manage .manage-img img {
-    /* width: 50%; */
+    /* width: 200px; */
+    /* min-height: 100%; */
+  
   }
-
   .manage .manage-content h1 {
     font-size: 55px;
   }
@@ -804,8 +843,11 @@ body {
     font-size: 18px;
     line-height: 30px;
   }
+  .manage .manage-content .manage-info p {
+    margin: 0;
+  }
   .manage .manage-content .manage-information {
-    margin-left:50px;
+    /* margin-left: 50px; */
     width: 800px;
   }
   .manage .manage-info img {
@@ -823,23 +865,26 @@ body {
     /* animation: slideInFromRight 1s ease-in; */
   }
   .usedCase .case-img img {
-    border-radius: 10px;
-    width: 80%;
-    margin-left: 15%;
+    border-radius: 5px;
+    width: 100%;
+    /* margin-left: 10%; */
   }
   .usedCase .case {
     /* animation: slideInFromLeft 1s ease-in; */
-    width: 500px;
-    margin-left: 5%;
-    text-align: justify;
+    /* width: 500px; */
+    /* margin-left: 5%; */
+    /* text-align: justify; */
+  }
+  .usedCase .cases p {
+    margin: 0px;
   }
   .usedCase .case h1 {
-    font-size: 55px;
+    font-size: 50px;
     text-align: center;
   }
 
   .usedCase .cases p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
   }
 
@@ -848,22 +893,23 @@ body {
   }
 
   .usedCase .case .btn-black {
-    font-size: 25px;
+    font-size: 16px;
     padding: 15px 30px;
   }
   .usedCase .case .btn-white {
-    border: 3px solid #000;
-    font-size: 25px;
+    border: 2px solid #000;
+    font-size: 16px;
     padding: 15px 30px;
+    font-weight: bold;
   }
 
   /* Service Section **********************************************/
   #service {
     position: relative;
     width: 100vw;
-    overflow-x: clip;
+    /* overflow-x: clip; */
   }
-  #service::before{
+  /* #service::before{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -871,7 +917,7 @@ body {
     position: absolute;
     left: 45%;
     top: -10%;
-  }
+  } */
   .service {
     /* animation: slideInFromBottom 1s ease-in; */
   }
@@ -881,11 +927,11 @@ body {
     text-align: center;
   }
   .service-intro h1 {
-    font-size: 55px;
+    font-size: 50px;
   }
   .service-intro p {
-    font-size: 20px;
-    width:600px;
+    font-size: 16px;
+    width: 600px;
   }
 
   .service-cards {
@@ -901,7 +947,7 @@ body {
   .service .service-cards .card p,
   .service .service-cards .card a,
   .service .service-cards .card span {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
   }
 
@@ -930,14 +976,14 @@ body {
     /* animation: slideInFromRight 1s ease-in; */
   }
   .payment-intro h1 {
-    font-size: 55px;
+    font-size: 50px;
   }
   .payment .payment-intro p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
   }
   .payment-app span {
-    font-size: 20px;
+    font-size: 16px;
   }
   .payment .payment-app .app img {
     width: 25%;
@@ -952,16 +998,16 @@ body {
     justify-content: space-around;
   }
   .update h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .update .input {
     width: 50%;
   }
   .update .input input {
-    font-size: 20px;
+    font-size: 16px;
   }
   .submit {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   /* Footer Section *******************************************************/
@@ -973,22 +1019,18 @@ body {
   }
 
   .footer span {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 21px;
   }
 
   .footer ul li a {
-    font-size: 20px;
+    font-size: 16px;
     color: #000;
     line-height: 2rem;
   }
 }
 
-
-@media screen and (min-width: 1280px) {
-  .container {
-    /* max-width: 1500px; */
-  }
+/* @media screen and (min-width: 1280px) {
   #home::after {
     min-height: 75%;
   }
@@ -1011,22 +1053,89 @@ body {
   .update h2 {
     font-size: 50px;
   }
-}
-
-
+} */
 
 @media screen and (min-width: 1440px) {
-  .container {
-    /* max-width: 1300px; */
+  
+  .hero .hero-img img{
+    /* width: 80%; */
   }
+   .hero .hero-content h1 {
+    font-size: 80px;
+    width: 600px;
+  }
+
+
   .manage .manage-img img {
-    /* height: 100%;
-    width: 100%; */
+    height: 100%;
+    width: 100%;
   }
-  .manage .manage-content h1{
+  .manage .manage-content h1 {
     font-size: 70px;
   }
+   .manage .manage-content .manage-info p {
+    margin: 10px 0;
+  }
+
+  .usedCase {
+    gap: 5rem;
+    max-width: calc(100% - 200px);
+  }
+
+  .usedCase .case-img img {
+    width: 100%;
+  }
+  .usedCase .case h1 {
+    font-size: 70px;
+  }
+
+  .usedCase .cases p {
+    font-size: 20px;
+  }
+
+  .usedCase .case .btn-white,
+  .usedCase .case .btn-black {
+    font-size: 20px;
+  }
+
+  .service-intro h1 {
+    font-size: 70px;
+  }
+  .service-intro p {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 10px 0;
+  }
+
+  .service .service-cards .card p,
+  .service .service-cards .card a,
+  .service .service-cards .card span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .service .service-cards .card span {
+    line-height: 40px;
+  }
+
   .payment .payment-intro h1 {
     font-size: 70px;
+  }
+  .payment .payment-intro p {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .update h2 {
+    font-size: 40px;
+  }
+  .update .input input,
+  .submit {
+    font-size: 20px;
+  }
+
+  .footer span,
+  .footer a {
+    font-size: 20px;
   }
 }
