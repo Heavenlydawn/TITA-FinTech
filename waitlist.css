@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=League+Gothic&family=Lora&family=Montserrat&family=Poppins&display=swap');
+
+:root {
+  --transition: all 0.3s linear;
+}
+
+
+
+/* Utilities*********************************************** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.container{
+  margin: 0 auto;
+}
+
+
+
+
+/* Home Section***************************************** */
+#home{
+    position:relative;
+}
+
+#home .home header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px 20px;
+    background: #000;
+}
+
+#home .home header .btn-light {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  background: transparent;
+  border:2px solid #fff;
+  padding:10px 20px;
+  border-radius:5px;
+}
