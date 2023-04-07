@@ -12,9 +12,9 @@
     <!-- Home Section -->
     <section id="home">
       <div class="home container">
-        <header>
+        <header class="container">
           <a href="./index.html" class="back-btn">
-            <img src="./images/waitlist-back-btn.svg" alt="" />
+            <img src="./images/wait-list-backBtn.png" alt="">
           </a>
           <button class="btn btn-light">Contact us</button>
         </header>
@@ -29,37 +29,45 @@
 
             <!-- Form -->
             <form>
-              <input type="text" name="name" id="name" placeholder="Name" />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+              />
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Email Address"
+                required
               />
               <input
-                type="location"   
+                type="location"
                 name="location"
                 id="location"
                 placeholder="Location"
+                required
               />
 
-                <div class="div dropdown" id="dropdown">
-                    <p>what way would you use TITA</p>
-                    <img src="" alt="">
-                </div>
+              <div class="dropdown">
+                <p>Reasons for using TITA</p>
+                <button class="btn" id="dropdown">
+                  <img src="./images/waitlist-dropdown.svg" alt="" />
+                </button>
+              </div>
 
-              <button class="btn btn-blue">
-                Notify me
-              </button>
+              <button class="btn btn-blue">Notify me</button>
             </form>
           </div>
 
           <div class="hero-img">
-            <img src="./images/wait-list-hero-img.svg" alt="Hero-Image">
+            <img src="./images/waitlist.png" alt="" />
           </div>
         </div>
       </div>
     </section>
   </body>
-    <!-- End of Home Section -->
+  <!-- End of Home Section -->
 </html>
