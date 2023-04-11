@@ -12,6 +12,7 @@
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 li {
@@ -574,7 +575,7 @@ display: none;
     line-height: 25px;
   }
   .manage .manage-info img {
-    width: 70px;
+    width: 50px;
   }
 
   /* Use case ********************************************** */
@@ -774,16 +775,13 @@ display: none;
   /* #manage{
     position: relative;
   }
-
   #manage .manage .manage-bg{
     display: block;
-
   }
   #manage .manage .manage-bg .bg1{
     position: absolute;
     left: -15%;
     top: 0%;
-
   }
   #manage .manage .manage-bg .bg2{
     position: absolute;
@@ -796,7 +794,6 @@ display: none;
     height: 100%;
     position: relative;
   }
-
   #manage::before{
     position: absolute;
     content: "";
@@ -840,7 +837,7 @@ display: none;
   .manage .manage-content .manage-intro p,
   .manage .manage-content .manage-info span,
   .manage .manage-content .manage-info p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
   }
   .manage .manage-content .manage-info p {
@@ -947,7 +944,7 @@ display: none;
   .service .service-cards .card p,
   .service .service-cards .card a,
   .service .service-cards .card span {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
   }
 
@@ -1004,10 +1001,10 @@ display: none;
     width: 50%;
   }
   .update .input input {
-    font-size: 16px;
+    font-size: 14px;
   }
   .submit {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   /* Footer Section *******************************************************/
@@ -1019,14 +1016,17 @@ display: none;
   }
 
   .footer span {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 21px;
   }
 
   .footer ul li a {
-    font-size: 16px;
+    font-size: 14px;
     color: #000;
     line-height: 2rem;
+  }
+  .footer .copyRight span{
+    font-size:10px;
   }
 }
 
@@ -1034,19 +1034,15 @@ display: none;
   #home::after {
     min-height: 75%;
   }
-
   .manage .manage-content h1 {
     font-size: 50px;
   }
-
   .usedCase .case h1 {
     font-size: 70px;
   }
-
   .service-intro h1 {
     font-size: 70px;
   }
-
   .payment .payment-intro h1 {
     font-size: 70px;
   }
