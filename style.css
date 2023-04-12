@@ -684,7 +684,7 @@ display: none;
   }
   #home header .nav-center .links a {
     margin: 0 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: 0.5rem 1.1rem;
   }
   #home header .nav-center .links a:hover {
@@ -694,7 +694,7 @@ display: none;
     display: flex;
   }
   #home header .social-icons a {
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: #fff;
     margin: 0 0.5rem;
     font-weight: bold;
@@ -702,12 +702,13 @@ display: none;
   }
   #home header .social-icons .btn-light a{
     color: #1740ff;
+    font-size: 16px;
   }
   #home header .social-icons .btn-light {
     outline: none;
     border: none;
     padding: 15px 20px;
-    font-size: 16px;
+  
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;

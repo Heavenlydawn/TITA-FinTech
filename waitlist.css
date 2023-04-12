@@ -133,7 +133,7 @@ body {
 }
 
 #home .home .hero-section .hero-content .answer{
-  /* display: none; */
+  display: none;
   position: absolute;
   border-radius: 10px;
   right: 10%;
