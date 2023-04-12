@@ -987,7 +987,7 @@ display: none;
 @media screen and (min-width: 1440px) {
   .container{
     /* padding: 0 50px; */
-    max-width:1500px
+    max-width:1400px
   }
   .hero{
     gap:17rem;
@@ -1013,7 +1013,7 @@ display: none;
   .manage .manage-content .manage-intro p,
   .manage .manage-content .manage-info span,
   .manage .manage-content .manage-info p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .usedCase {
@@ -1041,7 +1041,7 @@ display: none;
     font-size: 70px;
   }
   .service-intro p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     margin: 10px 0;
   }
@@ -1049,7 +1049,7 @@ display: none;
   .service .service-cards .card p,
   .service .service-cards .card a,
   .service .service-cards .card span {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
   }
 
@@ -1061,7 +1061,7 @@ display: none;
     font-size: 70px;
   }
   .payment .payment-intro p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 35px;
   }
 
@@ -1070,7 +1070,7 @@ display: none;
   }
   .update .input input,
   .submit {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .footer span,
