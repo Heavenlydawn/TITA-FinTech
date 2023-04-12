@@ -12,7 +12,6 @@
 }
 a {
   text-decoration: none;
-  color: #fff;
 }
 
 li {
@@ -30,9 +29,6 @@ body {
 /* Utilities *****************************/
 .container {
   margin: 0 auto;
-  /* display: flex;s
-  justify-content: space-between;
-  align-items: center;  */
   width: 100%;
   padding: 0 20px;
 }
@@ -160,10 +156,14 @@ body {
   width: 100%;
   cursor: pointer;
 }
+
 .hero .hero-content .button-container .btn-light {
   color: #1740ff;
   background: #fff;
   border: 1px solid #1740ff;
+}
+.hero .hero-content .button-container .btn-blue a{
+  color: #fff;
 }
 .hero .hero-content .button-container .btn-blue {
   color: #fff;
@@ -440,7 +440,7 @@ display: none;
   border-radius: 80px;
   outline: none;
   border: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #fff;
   position: absolute;
   right: 0.2%;
@@ -450,7 +450,7 @@ display: none;
 
 /* Footer Section *******************************************************/
 .footer {
-  margin-top: 5%;
+  margin-block: 5%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 3rem;
@@ -478,6 +478,10 @@ display: none;
 }
 .footer-logo img {
   width: 150px;
+}
+
+.footer .copyRight span{
+  font-size: 10px;
 }
 
 /* KeyFrames ********************************************** */
@@ -575,7 +579,7 @@ display: none;
     line-height: 25px;
   }
   .manage .manage-info img {
-    width: 50px;
+    width: 70px;
   }
 
   /* Use case ********************************************** */
@@ -696,6 +700,9 @@ display: none;
     font-weight: bold;
     transition: var(--transition);
   }
+  #home header .social-icons .btn-light a{
+    color: #1740ff;
+  }
   #home header .social-icons .btn-light {
     outline: none;
     border: none;
@@ -704,7 +711,6 @@ display: none;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
-    color: #1740ff;
     background: #fff;
   }
 
@@ -772,52 +778,7 @@ display: none;
   }
 
   /* Manage-Section************************************ */
-  /* #manage{
-    position: relative;
-  }
-  #manage .manage .manage-bg{
-    display: block;
-  }
-  #manage .manage .manage-bg .bg1{
-    position: absolute;
-    left: -15%;
-    top: 0%;
-  }
-  #manage .manage .manage-bg .bg2{
-    position: absolute;
-    top:25%;
-    right: -25%;
-  } */
-
-  /* #manage{
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  #manage::before{
-    position: absolute;
-    content: "";
-    width: 80%;
-    height: 100%;
-    background:url(./images/Vector.svg);
-    background-repeat: no-repeat;
-  }
-  #manage::after{
-    position: absolute;
-    content: "";
-    width: 80%;
-    height: 100%;
-    background:url(./images/Vector-2.svg);
-    background-repeat: no-repeat;
-    top:0%;
-    left: 50%;
-    bottom: 50px;
-  } */
-
-
-
-
-  .manage-content {
+   .manage-content {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -848,7 +809,7 @@ display: none;
     width: 800px;
   }
   .manage .manage-info img {
-    width: 100px;
+    width: 70px;
   }
 
   /* Use case ********************************************** */
@@ -904,17 +865,8 @@ display: none;
   #service {
     position: relative;
     width: 100vw;
-    /* overflow-x: clip; */
   }
-  /* #service::before{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: url(./images/Vector-1.svg);
-    position: absolute;
-    left: 45%;
-    top: -10%;
-  } */
+ 
   .service {
     /* animation: slideInFromBottom 1s ease-in; */
   }
@@ -1026,30 +978,11 @@ display: none;
     line-height: 2rem;
   }
   .footer .copyRight span{
-    font-size:10px;
+    font-size: 10px;
   }
 }
 
-/* @media screen and (min-width: 1280px) {
-  #home::after {
-    min-height: 75%;
-  }
-  .manage .manage-content h1 {
-    font-size: 50px;
-  }
-  .usedCase .case h1 {
-    font-size: 70px;
-  }
-  .service-intro h1 {
-    font-size: 70px;
-  }
-  .payment .payment-intro h1 {
-    font-size: 70px;
-  }
-  .update h2 {
-    font-size: 50px;
-  }
-} */
+
 
 @media screen and (min-width: 1440px) {
   .container{
