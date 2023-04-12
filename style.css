@@ -1002,8 +1002,13 @@ display: none;
 
 
   .manage .manage-img  {
-   width:40%;
+    width: 60%;
   }
+  .manage .manage-img img {
+    width: 70%;
+
+  }
+
   .manage .manage-content h1 {
     font-size: 70px;
   }
