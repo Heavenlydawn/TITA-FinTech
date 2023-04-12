@@ -12,6 +12,7 @@
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 body {
@@ -209,8 +210,8 @@ header .header-content h1 {
   .container {
     max-width: 1500px;
   }
-  header .back-btn img {
-    width: 40px;
+  header .back-btn a img {
+    width: 50px;
   }
   header .header-content p {
     line-height: 22px;

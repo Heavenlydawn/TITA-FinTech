@@ -39,6 +39,7 @@ body {
   align-items: center;
   padding: 10px;
   width: 100%;
+  z-index: 1;
 }
 
 #home .home header .btn-light {
@@ -279,6 +280,12 @@ body {
   #home .home .hero-img img {
     width: 100%;
   }
+
+  #home .home .hero-section .hero-img {
+    width: 1000px;
+    height: 1000px;
+  }
+ 
   #home .home .hero-section .hero-content {
     width: 500px;
   }
