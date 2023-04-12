@@ -99,9 +99,14 @@ header .header-content h1 {
 }
 
 .faq-question-answer {
+  display: none;
   transition: 0.4s;
   box-shadow: -6px 5px 14px 5px rgba(225, 225, 225, 0.3);
   padding: 20px;
+}
+
+.faq-question-answer.show-answer{
+  display: block;
 }
 
 [aria-expanded="false"]::after {
@@ -183,6 +188,22 @@ header .header-content h1 {
 
 /* MEDIA QUERY************** */
 
+@media screen and (min-width:400px) {
+  #home .home .faq{
+    padding: 10px;
+  }
+  .faq-question-title::after {
+  right: -55%;
+ 
+}
+#home .home .contact .shq {
+  width: 100%;
+}
+#home .home .contact .btn-blue {
+  width: 100%;
+}
+}
+
 @media screen and (min-width: 1000px) {
   /* Header Section********************* */
   .container {
@@ -205,7 +226,9 @@ header .header-content h1 {
 
   /* Home and FAQ Section */
   /* FAQ SECTION */
-
+  #home .home .faq hr {
+    display: block;
+  }
   #home .home .faq {
     margin-top: 50px;
   }
