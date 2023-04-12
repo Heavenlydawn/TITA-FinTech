@@ -664,7 +664,7 @@ display: none;
 
 @media screen and (min-width: 1000px) {
   .container {
-    max-width: 100vw;
+    max-width: 95vw;
   }
   /* Header-Section*********************************************************** */
   #home header .nav-center {
@@ -790,8 +790,8 @@ display: none;
     width: 70%;
   }
   .manage .manage-img img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+
   }
   .manage .manage-content h1 {
     font-size: 50px;
