@@ -156,9 +156,11 @@ body {
   width: 100%;
   cursor: pointer;
 }
-
-.hero .hero-content .button-container .btn-light {
+.hero .hero-content .button-container .btn-light a{
   color: #1740ff;
+}
+.hero .hero-content .button-container .btn-light {
+ color: #1740ff;
   background: #fff;
   border: 1px solid #1740ff;
 }
@@ -265,10 +267,11 @@ display: none;
   justify-content: center;
   align-items: center;
 }
-
+.usedCase .case .btn-black a{
+  color: #fff;
+}
 .usedCase .case .btn-black {
   background-color: #000;
-  color: #fff;
   border: 3px solid #000000;
   border-radius: 10px;
   font-size: 1.4rem;
@@ -276,9 +279,12 @@ display: none;
   padding: 10px 20px;
   cursor: pointer;
 }
+.usedCase .case .btn-white a{
+  color: #000;
+}
 .usedCase .case .btn-white {
   background-color: #fff;
-  color: #000;
+  
   border: none;
   border-radius: 10px;
   font-size: 1.4rem;
@@ -780,16 +786,17 @@ display: none;
   /* Manage-Section************************************ */
    .manage-content {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 5rem;
     width:100%;
+
   }
   .manage .manage-img  {
-    width: 70%;
+    width: 50%;
   }
   .manage .manage-img img {
-    width: 90%;
+    width: 100%;
 
   }
   .manage .manage-content h1 {
@@ -809,7 +816,7 @@ display: none;
     width: 800px;
   }
   .manage .manage-info img {
-    width: 70px;
+    width: 80px;
   }
 
   /* Use case ********************************************** */
@@ -986,7 +993,6 @@ display: none;
 
 @media screen and (min-width: 1440px) {
   .container{
-    /* padding: 0 50px; */
     max-width:1400px
   }
   .hero{
@@ -1002,8 +1008,13 @@ display: none;
 
 
   .manage .manage-img  {
-   width:40%;
+    width: 30%;
   }
+  .manage .manage-img img {
+    width: 100%;
+
+  }
+
   .manage .manage-content h1 {
     font-size: 70px;
   }
