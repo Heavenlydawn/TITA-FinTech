@@ -156,9 +156,11 @@ body {
   width: 100%;
   cursor: pointer;
 }
-
-.hero .hero-content .button-container .btn-light {
+.hero .hero-content .button-container .btn-light a{
   color: #1740ff;
+}
+.hero .hero-content .button-container .btn-light {
+ color: #1740ff;
   background: #fff;
   border: 1px solid #1740ff;
 }
@@ -265,10 +267,11 @@ display: none;
   justify-content: center;
   align-items: center;
 }
-
+.usedCase .case .btn-black a{
+  color: #fff;
+}
 .usedCase .case .btn-black {
   background-color: #000;
-  color: #fff;
   border: 3px solid #000000;
   border-radius: 10px;
   font-size: 1.4rem;
@@ -276,9 +279,12 @@ display: none;
   padding: 10px 20px;
   cursor: pointer;
 }
+.usedCase .case .btn-white a{
+  color: #000;
+}
 .usedCase .case .btn-white {
   background-color: #fff;
-  color: #000;
+  
   border: none;
   border-radius: 10px;
   font-size: 1.4rem;
@@ -780,7 +786,7 @@ display: none;
   /* Manage-Section************************************ */
    .manage-content {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 5rem;
     width:100%;
@@ -809,7 +815,7 @@ display: none;
     width: 800px;
   }
   .manage .manage-info img {
-    width: 70px;
+    width: 80px;
   }
 
   /* Use case ********************************************** */
@@ -1005,7 +1011,7 @@ display: none;
     width: 60%;
   }
   .manage .manage-img img {
-    width: 70%;
+    width: 60%;
 
   }
 
